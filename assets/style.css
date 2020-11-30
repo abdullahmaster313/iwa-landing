@@ -14,8 +14,8 @@ body{
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
-  height: 100%;
-  width: 100%;
+  min-height: 100%;
+  min-width: 100%;
 }
 .lang-overlay{
   position: absolute;
@@ -36,7 +36,7 @@ body{
   transform: translateY(-50%);
 }
 .logo{
-  width: 430px;
+  max-width: 430px;
   border-radius: 12px;
   margin: 0 auto;
   padding: 16px 40px;
@@ -62,9 +62,9 @@ body{
   margin: 0 auto;
 }
 .btns-outer h4{
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 .btns{
   margin: 0 auto;
@@ -75,7 +75,7 @@ body{
 .btn-brand {
   width: 150px;
   text-decoration: none;
-  margin: 0 16px;
+  margin: 8 16px;
   font-size: 18px;
   font-weight: 700;
   border-radius: 5px;
@@ -92,4 +92,23 @@ body{
 .btn-brand:focus {
   outline: 0;
   box-shadow: 0 0 0 0.2rem rgba(228, 103, 19, 0.25);
+}
+
+@media screen and (max-width: 576px) {
+  .lang-landing{
+ }
+ .logo{
+   margin-bottom: 20px;
+ }
+  .lang-inner h1{
+    font-size: 30px;
+    margin: 10px 0;
+  } 
+  .lang-inner p{
+    font-size: 18px;
+    margin: 20px 0;
+  }
+  .btns-outer h4{
+    margin-bottom: 10px;
+  }
 }
